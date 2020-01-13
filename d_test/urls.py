@@ -18,5 +18,5 @@ from django.contrib import admin
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'^t1/',include('t1.urls')),
+    url(r'^t1/',include('t1.urls'))  # 地址填入ip:端口/t1/时会访问t1应用下的urls子路由
 ]
